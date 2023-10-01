@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Music Player</h1>
+    </header>
+    <div class="player-container">
+        <div class="song-details">
+            <img src="song1.jpg" alt="Song 1 Image" id="song-image">
+            <h1>Now Playing: <span id="song-title">Song Title</span></h1>
+            <p>Artist: <span id="artist">Artist Name</span></p>
+            <p>Duration: <span id="duration">0:00</span></p>
+        </div>
+        <div class="controls">
+            <button id="shuffle">Shuffle</button>
+            <button id="prev">Previous</button>
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="next">Next</button>
+            <button id="repeat">Repeat</button>
+        </div>
+        <div class="volume-control">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+        </div>
+        <div class="song-countdown">
+            <p>Time Left: <span id="countdown">0:00</span></p>
+        </div>
+    </div>
+    <audio id="audio" src=""></audio>
+    <script src="script.js"></script>
+</body>
+</html>

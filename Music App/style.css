@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.player-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.song-details {
+    margin-bottom: 20px;
+}
+
+#song-image {
+    width: 400px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #555;
+}
+
+.volume-control {
+    margin-top: 10px;
+}
+
+.song-countdown {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.controls button.active {
+    background-color: #ff6600;
+}
