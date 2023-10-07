@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartLearn Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="main-nav">
+      <a href="" class="logo"><i class="fa-solid fa-book-open-reader fa-lg" style="color: #bfa72b;"></i>SmartLearn Academy</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#" class="login-btn">Sign Up</a></li>
+      </ul>
+      <div class="menu-toggle"><i class="fa-solid fa-bars fa-lg"></i></div>
+    </nav>
+
+    <div class="mobile-menu">
+      <div class="close-menu"><i class="fa-solid fa-xmark fa-lg" id="close-menu"></i></div>
+      <ul class="mobile-nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#" class="mobile-login-btn">Sign Up</a></li>
+      </ul>
+    </div>
+  </header>
+
+  
+  <section class="login-section">
+    <div class="signup-form">
+      <div class="success-message" style="display: none;"></div>
+      <div class="close-signup"><i class="fa-solid fa-xmark fa-lg" id="close-signup"></i></div>
+      <h2>Join SmartLearn Academy</h2>
+      <h3>Unlock a world of knowledge!</h3>
+      <form>
+        <label for="fullName">Full Name</label><br>
+        <input type="text" id="fullName" placeholder="Your Name"><br>
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" placeholder="Enter Your Email"><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" placeholder="Create a Password"><br>
+        <button class="signup-button">Sign Up</button><br>
+        <hr class="form-divider"><br>
+      </form>
+    </div>
+  </section>
+
+  <section class="home-section" id="home">
+    <div class="container">
+      <div class="left-column">
+        <img src="teacher.jpg" alt="Teacher" />
+      </div>
+      <div class="right-column">
+        <h3>Start Your Learning Journey</h3>
+        <p>
+          Learn from anywhere and build a bright future with SmartLearn
+          Academy.
+        </p>
+        <p>
+          Take the next step towards your personal and professional goals
+          with us.
+        </p>
+       
+      </div>
+    </div>
+  </section>
+
+  <section class="courses-section" id="courses">
+    <div class="container">
+      <div class="section-header">
+        <h1>Explore Our Courses</h1>
+        <button class="view-all-courses">View All Courses</button>
+      </div>
+      <div class="course-cards">
+        <div class="course-card">
+          <i class="fa-solid fa-code fa-xl"></i>
+          <h3>Programming</h3>
+          <p>
+            Learn coding from scratch or advance your programming skills with our programming courses.
+          </p>
+        </div>
+        <div class="course-card">
+          <i class="fa-solid fa-language fa-xl"></i>
+          <h3>Languages</h3>
+          <p>
+            Explore the world of languages with our language courses, including English, Spanish, and more.
+          </p>
+        </div>
+        <div class="course-card">
+          <i class="fa-solid fa-flask fa-xl"></i>
+          <h3>Science</h3>
+          <p>
+            Dive into the fascinating world of science through our engaging science courses.
+          </p>
+        </div>
+        <div class="course-card">
+          <i class="fa-solid fa-paint-roller fa-xl"></i>
+          <h3>Art & Creativity</h3>
+          <p>
+            Unleash your creativity with our art and design courses, covering painting, drawing, and more.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="contact-form">
+        <form action="#" method="POST">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required />
+
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" required />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+          ></textarea>
+
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h1>About SmartLearn Academy</h1>
+      </div>
+      <div class="about-content">
+        <div class="about-description">
+          <p>
+            SmartLearn Academy is dedicated to helping you learn easily with
+            the guidance of professional teachers.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Sapiente inventore laudantium quod exercitationem fugit omnis
+            consequuntur, blanditiis, repellendus, molestias nesciunt dolorum
+            nisi cupiditate saepe quisquam veniam suscipit nulla necessitatibus
+            magni!
+          </p>
+        </div>
+        <div class="about-features">
+          <div class="feature">
+            <img src="study_icon.jpg" alt="Study Icon" />
+            <h3>Learn Anywhere</h3>
+          </div>
+          <div class="feature">
+            <img src="support_icon.jpg" alt="Support Icon" />
+            <h3>24/7 Strong Support</h3>
+          </div>
+        </div>
+      </div>
+        <div class="stat">
+          <h1>160k</h1>
+          <p>Mobile App Users</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-logo">
+      <i class="fa-solid fa-book-open-reader fa-lg" style="color: #bfa72b;"></i>
+      <span>SmartLearn Academy</span>
+    </div>
+    <div class="footer-links">
+      <div class="footer-section">
+        <h3>Courses</h3>
+        <ul>
+          <li><a href="#">All Courses</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">Marketing</a></li>
+          <li><a href="#">Technology</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Rules & Regulations</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">Purchase Guide</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">Success Stories</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-social">
+      <h3>Follow Us On</h3>
+      <ul>
+        <li><a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-google-plus-g fa-xl"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-linkedin-in fa-xl"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-divider">
+      _____________________________________________________________
+    </div>
+    <div class="footer-copyright">&copy; All Rights Reserved 2023</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

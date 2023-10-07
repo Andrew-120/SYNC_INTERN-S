@@ -1,0 +1,482 @@
+body, h1, h2, h3, p, ul, li, form, button, input, textarea {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #bfa72b;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: #333;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #bfa72b;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1100;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .close-menu {
+    text-align: right;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .mobile-nav-links {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .mobile-nav-links li {
+    margin-bottom: 20px;
+  }
+  
+  .mobile-nav-links a {
+    color: #333;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .mobile-nav-links a:hover {
+    color: #bfa72b;
+  }
+
+  .login-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .signup-form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .signup-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .signup-form h3 {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #777;
+  }
+  
+  .close-signup {
+    text-align: right;
+  }
+  
+  .close-signup i {
+    font-size: 1.5rem;
+    color: #999;
+    cursor: pointer;
+  }
+  
+  .close-signup i:hover {
+    color: #333;
+  }
+  
+  .home-section-title {
+    background-color: #f95c01;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .home-section-title h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .home-section {
+    background-image: url('teacher.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #f6f6f6;
+    padding: 220px;
+  }
+  
+  .left-column {
+    width: 50%;
+    float: left;
+  }
+  
+  .right-column {
+    width: 50%;
+    float: right;
+  }
+  
+  .left-column img {
+    max-width: 60%;
+    height: auto;
+    padding: 5px;
+    display: block;
+  }
+  
+  .right-column h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .right-column p {
+    font-size: 1.2rem;
+    line-height: 1.0;
+    margin-bottom: 20px;
+  }
+  
+  .search-course {
+    margin-top: 30px;
+  }
+  
+  .search-input {
+    width: 70%;
+    padding: 30px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+  }
+  
+  .search-button {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #bfa72b;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #9c8821;
+  }
+  
+  .courses-section {
+    background-color: #fff;
+    padding: 80px;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .view-all-courses {
+    background-color: #bfa72b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-all-courses:hover {
+    background-color: #9c8821;
+  }
+  
+  .course-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .course-card {
+    width: calc(50% - 20px);
+    background-color: #d6d0d0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .course-card i {
+    font-size: 2rem;
+    color: #bfa72b;
+  }
+  
+  .course-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .course-card p {
+    font-size: 1rem;
+  }
+  
+  .contact-section {
+    background-color: #f0f0f0;
+    padding: 80px 0;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form .submit-button {
+    background-color: #bfa72b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form .submit-button:hover {
+    background-color: #9c8821;
+  }
+  
+  .about-section {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+  
+  .about-description {
+    width: 50%;
+    float: left;
+  }
+  
+  .about-description p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .about-features {
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .feature {
+    text-align: center;
+  }
+  
+  .feature img {
+    max-width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-stats {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .stat {
+    width: 33%;
+  }
+  
+  .stat h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .stat p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-logo i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+    color: #bfa72b;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+  }
+  
+  .footer-links ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footer-links a:hover {
+    color: #bfa72b;
+  }
+  
+  .footer-social ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .footer-social ul li {
+    margin: 0 10px;
+  }
+  
+  .footer-social a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    color: #bfa72b;
+  }
+  
+  .footer-divider {
+    background-color: #555;
+    height: 2px;
+    margin: 20px 0;
+  }
+  
+  .footer-copyright {
+    font-size: 0.8rem;
+  }
+  
